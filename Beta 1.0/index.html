@@ -1,9 +1,38 @@
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+  </head>
     <body>
         <div id="main container" style="width:100%;height:100%">
-            <div id="Vishal _Gaming" style="height:100%;width: 33.33%; background-color: aqua;float: left;">Vishal</div>
-            <div id="Krishna _Creative" style="height:100%;width: 33.33%; background-color:brown;float:left">Krishna</div>
-            <div id="Ojas _Budget" style="height:100%;width: 33.33%; background-color:darkgreen;float:left">Ojas</div>
+           <button type="button" class="btn btn-primary" id = "usecase_btn" onclick="openModal()" > Choose Use Case</button>
+           
+           
+           <div class="modal fade" id="modal-usecase">
+               <div class="modal-dialog modal-dialog-centered">
+                   <div class="modal-content" style="background-color:rgb(80, 38, 38)">
+                       <div class="modal-header" style="background-color:rgb(80, 38, 38)">
+                           <h4 class="modal-title">Choose Use Case</h4>
+                       </div>
+                       <div class="modal-body" style="height: 300px;width: auto;">
+                           <div id = "use-case-container" style="height: 100%; width: 100%;"><!--Use case Parent Container Div-->
+                                <div id = "use-case1" style="height: 100%;width: 33.33%; float: left; background-color: tan;"></div><!--Gaming Container-->
+                                <div id = "use-case2" style="height: 100%;width: 33.33%; float: left; background-color: red;"></div><!--Custom PC Container-->
+                                <div id = "use-case3" style="height: 100%;width: 33.33%; float: left; background-color: navajowhite;"></div><!--Content Creaters Container-->
+                           </div>
+                       </div>
+                       <div class="modal-footer" style="background-color:rgb(80, 38, 38)">
+                           <button type="button" class="btn btn-danger  " data-dismiss="modal">Close</button>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+           
         </div>
     </body>
 </html>
