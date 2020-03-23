@@ -1,52 +1,33 @@
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/main.css">
-  </head>
-    <body>
-      <div class="main container" style="background-color:black;">
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
+    <script src="../Scripts/jquery.js"></script>
+    <script src="../Scripts/main.js"></script>
+  <body style="background-color:white;" onload="showHide(0);">
+    <div class="parent_container" onmouseover="showHide(0);">
 
-     
-        <div class="child container">
-            <div class="card_left">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h1>krishna</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-              </div>
+      <div class="content_container" >
+
+        <div class="parts_container" id="parts" onmouseover="onMouseOver(1);" onmouseout="onMouseOut(1);">
+          <div class="card_parts" id="parts_card_1"></div>
+          <div class="card_parts" id="parts_card_2"></div>
+          <div class="card_parts" id="parts_card_3"></div>
+          <div class="card_parts" id="parts_card_4"></div>
+          <div class="card_parts" id="parts_card_5"></div>
+          <div class="card_parts" id="parts_card_6"></div>
         </div>
-        
-        <div class = "child container">
-          <div class="card_right">
-              <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                      <h1>krishna</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>John Doe</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
-                  </div>
-                </div>
-          </div>
-         
+
+        <div class="build_container" id="build" onmouseover="onMouseOver(2);" onmouseout="onMouseOut(2);">
+          <div class="card_build" id="build_card_1"></div>
+          <div class="card_build" id="build_card_2"></div>
+          <div class="card_build" id="build_card_3"></div>
+          <div class="card_build" id="build_card_4"></div>
+          <div class="card_build" id="build_card_5"></div>
+          <div class="card_build" id="build_card_6"></div>
         </div>
 
       </div>
-    </body>
+
+    </div>
+  </body>
 </html>
