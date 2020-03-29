@@ -7,6 +7,16 @@
   right: 0;
   bottom: 0;
 }
+
+.Company_logo{
+  width: 10%;
+  height: 7%;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  border-color: black;
+  border-style: solid;
+}
 .content_container{
   width:82%;
   height:80%;
@@ -20,7 +30,7 @@
 
 .parts_container{
   height:100%;
-  width: 49.5%;
+  width: 50%;
   left: 0%;
   position: absolute;
   border-color: yellow;
@@ -30,7 +40,7 @@
 
 .build_container{
   height:100%;
-  width: 49.5%;
+  width: 50%;
   right: 0%;
   position: absolute;
   border-color: slateblue;

@@ -1,29 +1,24 @@
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../Scripts/bootstrap/css/bootstrap.min.css">
+    <script src="../Scripts/bootstrap/js/bootstrap.min.js"></script>
     <script src="../Scripts/jquery.js"></script>
     <script src="../Scripts/main.js"></script>
+
   <body style="background-color:white;" onload="showHide(0);">
     <div class="parent_container" onmouseover="showHide(0);">
 
-      <div class="content_container" >
+      <div class="Company_Logo" onmousedown="reloadHomePage();"></div>
 
-        <div class="parts_container" id="parts" onmouseover="onMouseOver(1);" onmouseout="onMouseOut(1);">
-          <div class="card_parts" id="parts_card_1"></div>
-          <div class="card_parts" id="parts_card_2"></div>
-          <div class="card_parts" id="parts_card_3"></div>
-          <div class="card_parts" id="parts_card_4"></div>
-          <div class="card_parts" id="parts_card_5"></div>
-          <div class="card_parts" id="parts_card_6"></div>
+      <div class="content_container" id="content_container">
+
+        <div class="parts_container" id="parts" onmouseenter="onMouseOver(1);" onmouseleave = "onMouseOut(1);">
+
         </div>
 
-        <div class="build_container" id="build" onmouseover="onMouseOver(2);" onmouseout="onMouseOut(2);">
-          <div class="card_build" id="build_card_1"></div>
-          <div class="card_build" id="build_card_2"></div>
-          <div class="card_build" id="build_card_3"></div>
-          <div class="card_build" id="build_card_4"></div>
-          <div class="card_build" id="build_card_5"></div>
-          <div class="card_build" id="build_card_6"></div>
+        <div class="build_container" id="build" onmouseenter="onMouseOver(2);" onmouseleave = "onMouseOut(2);" >
+    
         </div>
 
       </div>
